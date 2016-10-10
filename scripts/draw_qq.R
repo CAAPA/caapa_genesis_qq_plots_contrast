@@ -27,6 +27,7 @@ plotQQ <- function(p.vals, study.name, plot.type) {
 png(out.file.name, width=6.5, height=8, units = 'in', res = 200)
 par(mfrow=c(2,2), cex=1.2)
 for (study in c(study.1, study.2, study.3, study.4)) {
+  print(study)
   results <- read.delim(paste0(input.dir, "/", study, ".txt"), stringsAsFactors = F)
   if (common) {
     p.vals <- results$PVALUE[results$MAF >= 0.05]
