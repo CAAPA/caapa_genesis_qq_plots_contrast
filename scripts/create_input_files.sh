@@ -12,6 +12,8 @@ cut -f4,9 /gpfs/barnes_share/dcl01_data_aniket/data/CAAPA_jhuGRAAD_BDOS_032416/J
 cut -f4,9 /gpfs/barnes_share/dcl01_data_aniket/data/CAAPA_jhuGRAAD_BDOS_032416/JACKSON_ARIC/imputed/GENESIS/allchr_output_genesis_info_clean.txt | sed 's/Score.pval/PVALUE/' > ../data/input/genesis/ARIC.txt
 cut -f4,9 /gpfs/barnes_share/dcl01_data_aniket/data/CAAPA_jhuGRAAD_BDOS_032416/JACKSON_JHS/imputed/GENESIS/allchr_output_genesis_info_clean.txt | sed 's/Score.pval/PVALUE/' > ../data/input/genesis/JHS.txt
 cut -f4,9 /gpfs/barnes_share/dcl01_data_aniket/data/CAAPA_jhuGRAAD_BDOS_032416/WINSTON_SALEM/imputed/GENESIS/allchr_output_genesis_info_clean.txt | sed 's/Score.pval/PVALUE/' > ../data/input/genesis/SARP.txt
+cut -f4,9 /gpfs/barnes_share/dcl01_data_aniket/data/CAAPA_jhuGRAAD_BDOS_032416/WASHINGTON/imputed/GENESIS/allchr_output_genesis_info_clean.txt | sed 's/Score.pval/PVALUE/' > ../data/input/genesis/NIH.txt
+
 
 #EMMAX balanced cohorts
 cut -f4,6 /gpfs/barnes_share/caapa_metal/data/input/jhu_650y.txt > ../data/input/emmax/GRAAD.txt
