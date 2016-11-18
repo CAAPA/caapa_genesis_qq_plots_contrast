@@ -26,3 +26,9 @@ cut -f4,6 /gpfs/barnes_share/caapa_metal/data/input/jhu_abr.txt > ../data/input/
 cut -f4,6 /gpfs/barnes_share/caapa_metal/data/input/jackson_aric.txt > ../data/input/plink/ARIC.txt
 cut -f4,6 /gpfs/barnes_share/caapa_metal/data/input/jackson_jhs.txt > ../data/input/plink/JHS.txt
 cut -f4,6 /gpfs/barnes_share/caapa_metal/data/input/winston_salem.txt > ../data/input/plink/SARP.txt
+
+#Study sizes
+echo 1831 > ../data/input/genesis/n_NIH.txt
+echo 327 > ../data/input/genesis/n_ARIC.txt
+echo 632 > ../data/input/genesis/n_JHS.txt
+echo 341 > ../data/input/genesis/n_SARP.txt

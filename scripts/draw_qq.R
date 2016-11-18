@@ -32,9 +32,19 @@ for (study in c(study.1, study.2, study.3, study.4)) {
   } else if (common.str == "less_common") {
     p.vals <- results$PVALUE[(results$MAF >= 0.01) & (results$MAF < 0.05)]
     plot.type <- "0.01 <= MAF < 0.05"
-  } else {
+  } else if (common.str == "rare") {
     p.vals <- results$PVALUE[results$MAF < 0.01]
     plot.type <- "MAF < 0.01"
+  } else if (common.str == "mac_less_10") {
+    n <- as.numeric(read.delim(paste0(input.dir, "/n_", study, ".txt"), stringsAsFactors = F, head=F))
+    results$MAC <- results$MAF * 2 * n
+    p.vals <- results$PVALUE[results$MAC < 10]
+    plot.type <- "MAF < 10"
+  } else if (common.str == "mac_greater_10") {
+    n <- as.numeric(read.delim(paste0(input.dir, "/n_", study, ".txt"), stringsAsFactors = F, head=F))
+    results$MAC <- results$MAF * 2 * n
+    p.vals <- results$PVALUE[results$MAC >= 10]
+    plot.type <- "MAF >= 10"
   }
   plotQQ(p.vals, study, plot.type)
 }
