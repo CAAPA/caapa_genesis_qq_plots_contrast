@@ -10,10 +10,10 @@
 #                  BRIDGE ARIC JHS SARP
 
 #cat draw_qq.R | R --vanilla --args ../data/input/genesis less_common ../data/output/unbalanced_genesis_nih_less_common.png \
-                  NIH ARIC JHS SARP
+#                  NIH ARIC JHS SARP
 
 #cat draw_qq.R | R --vanilla --args ../data/input/genesis rare ../data/output/unbalanced_genesis_nih_rare.png \
-                  NIH ARIC JHS SARP
+#                  NIH ARIC JHS SARP
 
 #cat draw_qq.R | R --vanilla --args ../data/input/emmax F ../data/output/balanced_emmax_rare.png \
 #                  GRAAD CAG SAGE GALA
